@@ -11,10 +11,12 @@ public class DoublyLinkedNode extends Node implements ASIDMethods {
 
     //**********************DON'T TOUCH**********************
     private DoublyLinkedNode previousChild;
+    private DoublyLinkedNode nextchild;
 
     public DoublyLinkedNode(String letter, DoublyLinkedNode nextChild, DoublyLinkedNode previousChild) {
-        super(letter, nextChild);
+        super(letter);
         this.previousChild = previousChild;
+        this.nextchild = nextChild;
     }
     //**********************DON'T TOUCH**********************
 

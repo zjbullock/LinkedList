@@ -10,7 +10,12 @@ import org.linkedlist.practice.entities.Node;
 public class CircularlyLinkedNode extends Node implements ASIDMethods {
 
     //**********************DON'T TOUCH**********************
-    public CircularlyLinkedNode(String letter, Node node) { super(letter, node); }
+    private CircularlyLinkedNode head;
+    
+    public CircularlyLinkedNode(String letter, CircularlyLinkedNode head) {
+        super(letter);
+        this.head = head;
+    }
     //**********************DON'T TOUCH**********************
 
     @Override
